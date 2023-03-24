@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Clínica Veterinária</title>
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header class="bg-green-200 p-2">
+		<div class="flex items-center justify-between">
+			<div class="flex items-center">
+				<img url=https://fontawesome.com/icons/paw-simple?f=classic&s=solid" alt="Pegada" class="w-10 h-10">
+				<h1 class="text-4xl font-bold ml-2">Clínica Veterinária</h1>
+			</div>
+			<nav class="mt-8">
+				<ul class="flex gap-6">
+					<li><a href="#" class="hover:text-gray-300">Home</a></li>
+					<li><a href="#" class="hover:text-gray-300">Consultas</a></li>
+					<li><a href="#" class="hover:text-gray-300">Histórico</a></li>
+					<li><a href="#" class="hover:text-gray-300">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section>
+			<h2 class="text-lg lg:text-2xl mb-4 text-center">Informações do dono</h2>
+			<form class="max-w-md mx-auto">
+				<div class="mb-4">
+					<label class="block text-gray-700 font-bold mb-2" for="nome">
+						Nome completo:
+					</label>
+					<input
+						class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+						id="nome" type="text" placeholder="Digite seu nome completo" required>
+				</div>
+				<div class="mb-4">
+					<label class="block text-gray-700 font-bold mb-2" for="endereco">
+						Endereço completo:
+					</label>
+					<input
+						class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+						id="endereco" type="text" placeholder="Digite seu endereço completo" required>
+				</div>
+				<div class="mb-6">
+					<label class="block text-gray-700 font-bold mb-2" for="telefone">
+						Número de telefone:
+					</label>
+					<input
+						class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+						id="telefone" type="tel" placeholder="Digite seu número de telefone" required>
+				</div>
+				<div>
+				</div>
+			</form>
+		</section>
+		<section>
+			<h2 class="text-lg lg:text-2xl mb-4 text-center">Informações do Animal</h2>
+			<form class="max-w-md mx-auto">
+				<div class="mb-4">
+					<label class="block text-gray-700 font-bold mb-2" for="nome-animal">
+						Nome:
+					</label>
+					<input
+						class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+						id="nome-animal" type="text" placeholder="Digite o nome do animal" required>
+				</div>
+				<div class="mb-4">
+					<label class="block text-gray-700 font-bold mb-2" for="especie">
+						Espécie:
+					</label>
+					<input
+						class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+						id="especie" type="text" placeholder="Digite a espécie do animal" required>
+				</div>
+				<div class="mb-4">
+					<label class="block text-gray-700 font-bold mb-2" for="data-nasc">
+						Data de nascimento:
+					</label>
+					<input
+						class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+						id="data-nasc" type="date" required>
+				</div>
+				<div class="mb-4">
+					<label class="block text-gray-700 font-bold mb-2" for="historico-clinico">
+						Histórico clínico:
+					</label>
+					<textarea
+						class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+						id="historico-clinico" name="historico-clinico" rows="5"></textarea>
+				</div>
+			</form>
+		</section>
+		<section>
+			<h2 class="text-lg lg:text-2xl">Informações do Convênio</h2>
+			<form class="bg-white rounded-lg shadow-lg p-6">
+				<div class="mb-4">
+					<label for="possui-convenio" class="block text-gray-700 font-bold mb-2">Possui Convênio:</label>
+					<select id="possui-convenio" name="possui-convenio" required
+						class="block w-full p-2 rounded-md border border-gray-400 focus:outline-none focus:border-blue-500">
+						<option value="">Selecione uma opção</option>
+						<option value="sim">Sim</option>
+						<option value="nao">Não</option>
+					</select>
+				</div>
+				<div class="mb-4">
+					<label for="nome-convenio" class="block text-gray-700 font-bold mb-2">Nome do Convênio:</label>
+					<input type="text" id="nome-convenio" name="nome-convenio"
+						class="block w-full p-2 rounded-md border border-gray-400 focus:outline-none focus:border-blue-500">
+				</div>
+				<div class="mb-4">
+					<input type="radio" id="associado-conv" name="associado" value="sim" class="mr-2">
+					<label for="associado-conv" class="text-gray-700 font-bold">Número de associado do convênio
+						selecionado</label>
+					<br>
+					<input type="radio" id="associado-naoconv" name="associado" value="nao" class="mr-2">
+					<label for="associado-naoconv" class="text-gray-700 font-bold">Não sou associado do convênio
+						selecionado</label>
+				</div>
+			</form>
+		</section>
+		<section>
+			<h2 class="col-span-2">Agendar Consulta</h2>
+			<form class="col-start-1 col-end-3 row-start-2 row-end-5">
+				<label for="data-consulta">Data da Consulta:</label>
+				<input type="date" id="data-consulta" name="data-consulta" required class="w-full">
+				<label for="hora-consulta">Hora da Consulta:</label>
+				<input type="time" id="hora-consulta" name="hora-consulta" required class="w-full">
+				<label for="tipo-consulta">Tipo de Consulta:</label>
+				<select id="tipo-consulta" name="tipo-consulta" required class="w-full">
+					<option value="">Selecione</option>
+					<option value="rotina">Consulta de Rotina</option>
+					<option value="urgencia">Consulta de Urgência</option>
+					<option value="retorno">Consulta de Retorno</option>
+				</select>
+				<label for="observacoes">Observações:</label>
+				<textarea id="observacoes" name="observacoes" class="w-full"></textarea>
+				<input type="submit" value="Agendar"
+					class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Clínica Veterinária - Todos os direitos reservados</p>
+	</footer>
+</body>
+
+</html>
