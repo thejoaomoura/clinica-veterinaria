@@ -130,3 +130,57 @@ body {
     background-color: #F4F4F4; /* um tom de verde-azulado opaco */
    
     }
+
+/* Estilizando o botão com o ícone de sanduíche */
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    }
+    
+    /* Estilizando a lista de itens */
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    /* Estilizando os itens da lista */
+    li {
+    margin: 0;
+    }
+    
+    /* Estilizando o ícone de sanduíche nos dispositivos menores */
+    @media (max-width: 1023px) {
+    button i {
+    font-size: 1.5rem;
+    }
+    }
+    
+    /* Estilizando o menu sanduíche */
+    @media (max-width: 767px) {
+    button + ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    button + ul li {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    }
+    
+    button + ul li:last-child {
+    border-bottom: none;
+    }
+    
+    button + ul.show {
+    display: block;
+    }
+    }

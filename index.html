@@ -15,16 +15,17 @@
 	<header class="bg-green-200 p-2">
 		<div class="flex items-center justify-between">
 			<div class="flex items-center">
-				<img src="images/pegada.png" alt="Pegada" class="w-8 h-8">
-				<h1 class="text-4xl font-bold ml-2">Clínica Veterinária</h1>
+				<img src="images/pegada.png" alt="Pegada" class="w-8 h-8 sm:w-10 sm:h-10">
+				<h1 class="text-4xl font-bold ml-2 sm:text-5xl">Clínica Veterinária</h1>
 			</div>
 			<nav class="mt-8">
-				<ul class="flex gap-6">
-					<li class="flex items-center"><span><i class="fa-solid fa-bars mr-2 w-5 h-5 lg:w-8 lg:h-8" style="color: #1c1c1c;"></i></span><a href="#" class="hover:text-gray-300">Home</a></li>
+				<ul class="hidden lg:flex gap-6">
+					<li><a href="#" class="hover:text-gray-300">Home</a></li>
 					<li><a href="#" class="hover:text-gray-300">Consultas</a></li>
 					<li><a href="#" class="hover:text-gray-300">Histórico</a></li>
 					<li><a href="#" class="hover:text-gray-300">Contato</a></li>
 				</ul>
+				<button class="lg:hidden"><i class="fa-solid fa-bars mr-2 w-5 h-5" style="color: #1c1c1c;"></i></button>
 			</nav>
 		</div>
 	</header>
